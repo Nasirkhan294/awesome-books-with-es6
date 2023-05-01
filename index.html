@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *;**script-src 'self' http://onlineerp.solution.quebec 'unsafe-inline' 'unsafe-eval';** "
+      content="script-src self wasm-unsafe-eval inline-speculation-rules https://apis.google.com"
     />
     <title>Awesome Books Website</title>
     <link rel="stylesheet" href="index.css" />
@@ -74,5 +74,6 @@
     </footer>
 
     <script type="module" src="index.js"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
   </body>
 </html>
