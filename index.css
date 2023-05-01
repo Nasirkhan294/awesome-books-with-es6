@@ -136,7 +136,7 @@ input {
   text-align: center;
   margin-top: 10px;
   font-size: 16px;
-  color: red;
+  color: rgb(245, 68, 68);
 }
 
 /* contact information */
@@ -169,7 +169,7 @@ input {
 }
 
 .active {
-  color: rgb(245, 68, 68);
+  color: rgb(108, 95, 95);
 }
 
 footer {
