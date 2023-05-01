@@ -1,3 +1,5 @@
+import { DateTime } from '../node_modules/luxon/build/es6/luxon.js';
+
 export default class BookCollection {
   constructor() {
     // Initialize books array from localStorage or empty array
@@ -35,7 +37,7 @@ export default class BookCollection {
   }
 
   checkDate() {
-    this.date.innerHTML = new Date().toUTCString();
+    this.date.innerHTML = DateTime.now().setLocale('en-US').toLocaleString(DateTime.DATETIME_MED);
   }
 
   // Method to add a new book to the collection
